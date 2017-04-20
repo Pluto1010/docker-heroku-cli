@@ -1,4 +1,4 @@
-FROM ruby:slim
+FROM ruby:2.3-slim
 
 RUN \
   apt-get update && apt-get install -y --no-install-recommends \
