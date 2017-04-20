@@ -1,6 +1,6 @@
 # docker-heroku-cli
 
-Just type `./heroku` inside the project directory and it tries to build a docker container image that includes a runnable Heroku CLI and run it after that.
+Just type `./heroku` inside the project directory and it tries to build a docker container image that includes a runnable Heroku CLI and runs it after that.
 
 > Maybe you have to make it executable first by running something like `chmod u+x heroku` 
 
