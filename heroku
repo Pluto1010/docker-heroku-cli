@@ -1,0 +1,10 @@
+#!/bin/bash
+MYDIR=$(cd `dirname "$0"`; pwd)
+cd $MYDIR
+
+docker build -q -t pluto1010/heroku-cli . > /dev/null
+
+touch .netrc
+chmod 600 .netrc
+docker run -v $MYDIR/.netrc:/root/.netrc -ti --rm pluto1010/heroku-cli $@
+
